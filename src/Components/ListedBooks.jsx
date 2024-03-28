@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { IoIosArrowDropdown } from "react-icons/io";
+import { useState, useEffect } from "react";
+// import { IoIosArrowDropdown } from "react-icons/io";
 import ReadList from "./ReadList";
 import WishList from "./WishList";
-import { getReadBooks, getWishBooks } from "../Utilities/Utilities"; // Assuming you have these utility functions
+import { deleteRead, deleteWish, getReadBooks, getWishBooks } from "../Utilities/Utilities"; // Assuming you have these utility functions
 
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -66,6 +66,17 @@ const ListedBooks = () => {
         }
     };
     
+    const handleCross = (id) => {
+        deleteRead(id);
+        const restRead = getReadBooks();
+        setReadBooks(restRead)
+    }
+
+    const handleWishCross = (id) => {
+        deleteWish(id);
+        const restWish = getWishBooks();
+        setWishedBooks(restWish); 
+    }
 
     return (
         <div>
@@ -84,7 +95,12 @@ const ListedBooks = () => {
                 </select>
             </div>
 
-            <div className="flex mt-14">
+
+<div className="mt-4 text-xl font-bold text-red-500">
+    <marquee>Add books to wish list or read list from book details section to watch them here.</marquee>
+</div>
+
+            <div className="flex mt-10">
                 <div className="flex items-center overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
                     <a href="#" onClick={handleReadBooks} className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2   rounded-t-lg dark:border-gray-600 dark:text-gray-900 transition ${tabIndex === 0 ? "border border-b-0" : "border-b"}`}>
                         <span>Read Books</span>
@@ -96,8 +112,8 @@ const ListedBooks = () => {
             </div>
 
             <div>
-                {tabIndex === 0 && <ReadList readBooks={readBooks}></ReadList>}
-                {tabIndex === 1 && <WishList wishedBooks={wishedBooks}></WishList>}
+                {tabIndex === 0 && <ReadList readBooks={readBooks} handleCross={handleCross}></ReadList>}
+                {tabIndex === 1 && <WishList wishedBooks={wishedBooks} handleWishCross={handleWishCross}></WishList>}
             </div>
         </div>
     );

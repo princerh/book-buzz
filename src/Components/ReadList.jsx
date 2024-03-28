@@ -2,7 +2,7 @@
 
 import ReadListSingleBook from "./ReadListSingleBook";
 
-const ReadList = ({readBooks}) => {
+const ReadList = ({readBooks, handleCross}) => {
 
 
 
@@ -12,7 +12,7 @@ const ReadList = ({readBooks}) => {
        <div className="flex flex-col gap-8 mt-8">
 
 {
-    readBooks.map(readBook => <ReadListSingleBook key={readBook.id} readBook={readBook}></ReadListSingleBook>)
+    readBooks.map(readBook => <ReadListSingleBook key={readBook.id} readBook={readBook} handleCross={handleCross}></ReadListSingleBook>)
 }
 
 

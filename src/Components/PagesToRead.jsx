@@ -33,6 +33,9 @@ const PagesToRead = () => {
 
   return (
     <div style={{ width: '100%', height: 500 }}>
+      <div className="mt-4 text-xl font-bold text-red-500">
+    <marquee>Add books to read list from book details section to watch them here. This chart will show only the read books</marquee>
+</div>
       <ResponsiveContainer width="100%" height="90%"> {/* Fixed syntax */}
         <BarChart
           className='py-5'

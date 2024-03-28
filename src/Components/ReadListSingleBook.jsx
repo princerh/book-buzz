@@ -4,9 +4,11 @@ import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { MdOutlineContactPage } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { TiDeleteOutline } from "react-icons/ti";
 
-const ReadListSingleBook = ({readBook}) => {
+const ReadListSingleBook = ({readBook, handleCross}) => {
     const {bookId,  bookName, author, image, publisher, yearOfPublishing,  totalPages,  rating, category, tags} = readBook;
+
 
     return (
         <div className="border lg:p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900 flex flex-col lg:flex-row gap-6">
@@ -16,7 +18,11 @@ const ReadListSingleBook = ({readBook}) => {
 
             <div className="space-y-2 p-2 lg:p-2 flex flex-col justify-between">
                 <div>
-                    <h2 className="text-xl play font-semibold mb-2 tracking-wide">{bookName}</h2>
+                    <div className="flex justify-between size">
+                    <h2 className="text-xl play font-semibold mb-2 tracking-wide">{bookName}</h2> 
+                    <TiDeleteOutline className="cursor-pointer" onClick={() => handleCross(bookId)} size={40} />
+
+                    </div>
                     <p className="dark:text-gray-800 pb-3 border-b-2 border-dashed">By: {author}</p>
 
                     <div className="flex flex-col lg:flex-row  lg:items-center gap-5">

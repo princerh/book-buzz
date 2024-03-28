@@ -67,3 +67,16 @@ export const saveWishBooks = (book) => {
     toast.success("Added to Wish List");
 }
 
+export const deleteRead = (id) => {
+    let booksRead = getReadBooks();
+    const newREAD = booksRead.filter((book => book.bookId !== id))
+    localStorage.setItem('ReadBooks', JSON.stringify(newREAD))
+  toast.success('This Book deleted successfully') 
+}
+
+export const deleteWish = (id) => {
+    let booksWished = getWishBooks();
+    const newWISH = booksWished.filter((book => book.bookId !== id))
+    localStorage.setItem('WishedBooks', JSON.stringify(newWISH))
+  toast.success('This Book deleted successfully') 
+}
