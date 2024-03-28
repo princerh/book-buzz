@@ -1,0 +1,140 @@
+[
+
+    {
+        "bookId": 1,
+        "bookName": "The Dating Playbook for Men",
+        "author": "Andrew Ferebee",
+        "image": "/images/mendate.png",
+        "review": "The Dating Playbook for Men provides practical advice and strategies for men to improve their dating lives. It covers topics such as confidence, communication, and attracting the right partner.",
+        "totalPages": 250,
+        "rating": 4.3,
+        "category": "Self-Help",
+        "tags": ["Dating", "Self-Improvement", "Relationships"],
+        "publisher": "Knowledge for Men",
+        "yearOfPublishing": 2015
+      },
+      
+      {
+        "bookId": 2,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "/images/1984.png",
+        "review": "A dystopian novel that explores totalitarianism and surveillance. 1984 portrays a society controlled by a totalitarian government, where individualism and independent thinking are suppressed. The novel serves as a chilling warning about the dangers of authoritarianism and the erosion of personal freedoms.",
+        "totalPages": 328,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": ["Dystopian", "Political", "Classic"],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "/images/gatsby.png",
+        "review": "A compelling tale of wealth, love, and the American Dream set in the Roaring Twenties. The Great Gatsby is a timeless classic that delves into the lives of the rich and famous, exposing the emptiness and disillusionment beneath the glittering facade. Fitzgerald's lyrical prose and vivid imagery bring the Jazz Age to life, capturing the essence of an era defined by excess and ambition.",
+        "totalPages": 180,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": ["Classic", "Romance", "American Literature"],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },
+    
+    {
+        "bookId": 4,
+        "bookName": "The Notebook",
+        "author": "Nicholas Sparks",
+        "image": "/images/notebook.png",
+        "review": "The Notebook is a heartwarming romance novel that tells the story of Noah Calhoun and Allie Nelson, two young lovers from different social backgrounds who are separated by circumstances but find their way back to each other years later. It's a tale of love, destiny, and the enduring power of memories.",
+        "totalPages": 214,
+        "rating": 4.5,
+        "category": "Romance",
+        "tags": ["Romance", "Drama", "Contemporary"],
+        "publisher": "Warner Books",
+        "yearOfPublishing": 1996
+      },
+      {
+        "bookId": 5,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "/images/catcher.png",
+        "review": "A coming-of-age novel that follows the misadventures of Holden Caulfield. The Catcher in the Rye explores themes of teenage angst, alienation, and the search for identity. Salinger's poignant portrayal of adolescence resonates with readers of all ages, capturing the universal struggles of growing up in a world that often feels confusing and isolating.",
+        "totalPages": 224,
+        "rating": 4.2,
+        "category": "Fiction",
+        "tags": ["Classic", "Coming-of-Age", "American Literature"],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 6,
+        "bookName": "Spine of the Dragon",
+        "author": "Kevin J. Anderson",
+        "image": "/images/spine.png",
+        "review": "Spine of the Dragon is an epic fantasy novel that intertwines the fates of two disparate worlds—Nahor, a world of magic and dragons, and Uraba, a world of technology and warfare. As these worlds collide, heroes and villains emerge, and the fate of both realms hangs in the balance.",
+        "totalPages": 512,
+        "rating": 4.2,
+        "category": "Fantasy",
+        "tags": ["Fantasy", "Epic", "Dragons"],
+        "publisher": "Tor Books",
+        "yearOfPublishing": 2019
+      } ,
+      {
+        "bookId": 7,
+        "bookName": "The Hate U Give",
+        "author": "Angie Thomas",
+        "image": "/images/hate.png",
+        "review": "An impactful novel that addresses important issues of race, identity, and activism. The Hate U Give follows the journey of Starr Carter, a young African American girl, who witnesses the fatal shooting of her childhood friend by a police officer. As she grapples with grief and trauma, Starr finds herself at the center of a national controversy and must find her voice amidst the chaos. Thomas' powerful storytelling and authentic voice make this a must-read for readers of all ages.",
+        "totalPages": 464,
+        "rating": 4.8,
+        "category": "Young Adult",
+        "tags": ["Social Justice", "Young Adult", "Contemporary"],
+        "publisher": "Balzer + Bray",
+        "yearOfPublishing": 2017
+    },
+    {
+        "bookId": 8,
+        "bookName": "Why Do You Hate Money",
+        "author": "Nouf Alhimiary",
+        "image": "/images/money.png",
+        "review": "A thought-provoking exploration of the relationship between money and happiness. Why Do You Hate Money challenges conventional wisdom and encourages readers to examine their beliefs and behaviors around wealth. Alhimiary's insightful commentary and engaging anecdotes make this book a fascinating read for anyone interested in personal finance and self-improvement.",
+        "totalPages": 200,
+        "rating": 4.6,
+        "category": "Non-Fiction",
+        "tags": ["Personal Finance", "Self-Help", "Psychology"],
+        "publisher": "Random House",
+        "yearOfPublishing": 2022
+    },{
+        "bookId": 9,
+        "bookName": "One Last Breath",
+        "author": "Lisa Jackson",
+        "image": "/images/breathe.png",
+        "review": "One Last Breath is a gripping thriller that keeps readers on the edge of their seats. As the story unfolds, secrets are revealed, and the characters' lives intertwine in unexpected ways. Lisa Jackson's masterful storytelling and suspenseful plot twists make this a must-read for fans of the genre.",
+        "totalPages": 400,
+        "rating": 4.4,
+        "category": "Thriller",
+        "tags": ["Thriller", "Mystery", "Suspense"],
+        "publisher": "Kensington Books",
+        "yearOfPublishing": 2020
+    },
+    
+    {
+        "bookId": 10,
+        "bookName": "Fifty Shades of Grey",
+        "author": "E.L. James",
+        "image": "/images/grey.png",
+        "review": "Fifty Shades of Grey is a contemporary romance novel that follows the relationship between Anastasia Steele, a college graduate, and Christian Grey, a young business magnate. It explores themes of power dynamics, desire, and intimacy.",
+        "totalPages": 514,
+        "rating": 4.1,
+        "category": "Romance",
+        "tags": ["Romance", "Contemporary", "Erotica"],
+        "publisher": "Vintage Books",
+        "yearOfPublishing": 2011
+      }
+  
+      
+
+  ]
+  
+  

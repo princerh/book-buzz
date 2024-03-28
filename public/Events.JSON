@@ -1,0 +1,27 @@
+[
+    {
+      "image": "/images/newyork.jpg",
+      "location": "New York City",
+      "event_name": "Book Launch: The Art of Fiction",
+      "date_of_event": "2024-05-15",
+      "event_description": "Join us for the book launch of 'The Art of Fiction' by John Doe. Meet the author, get your book signed, and enjoy refreshments.",
+      "event_host_publication_name": "Publisher X"
+    },
+    {
+      "image": "/images/los.jpg",
+      "location": "Los Angeles",
+      "event_name": "Author Reading: Beyond the Horizon",
+      "date_of_event": "2024-06-10",
+      "event_description": "Attend an exclusive author reading of 'Beyond the Horizon' by Jane Smith. Explore the themes of the book and engage in a Q&A session with the author.",
+      "event_host_publication_name": "Book Club Y"
+    },
+    {
+      "image": "/images/chicago.jpg",
+      "location": "Chicago",
+      "event_name": "Panel Discussion: Diversity in Literature",
+      "date_of_event": "2024-07-20",
+      "event_description": "Join us for a panel discussion on diversity in literature. Hear from authors, publishers, and activists as they discuss the importance of representation in books.",
+      "event_host_publication_name": "Bookstore Z"
+    }
+  ]
+  
