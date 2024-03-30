@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { BarChart, ResponsiveContainer, Bar, Cell, XAxis, YAxis, CartesianGrid, Label } from 'recharts'; // Fixed import
 
 import { getReadBooks } from '../Utilities/Utilities';
+import { Helmet } from 'react-helmet';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink', '#FF5733', '#C70039', '#900C3F', '#581845', '#4CAF50'];
 
@@ -33,6 +34,7 @@ const PagesToRead = () => {
 
   return (
     <div style={{ width: '100%', height: 500 }}>
+      <Helmet> <title>Book Buzz | Read Pages </title></Helmet>
       <div className="mt-4 text-xl font-bold text-red-500">
     <marquee>Add books to read list from book details section to watch them here. This chart will show only the read books</marquee>
 </div>

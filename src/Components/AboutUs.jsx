@@ -1,8 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { Helmet } from "react-helmet";
+
 const AboutUs = () => {
     return (
         <div className="container text-justify mx-auto px-4 py-16">
+           <Helmet><title>Book Buzz | About</title></Helmet>
   <h2 className="text-3xl font-bold mb-8">About Book Buzz</h2>
   <p className="text-gray-700 text-base mb-4">
     Book Buzz is a website for book lovers of all kinds. We're passionate about the power of stories to transport us, educate us, and entertain us. Whether you're a seasoned reader or just starting out, Book Buzz is your one-stop shop for everything bookish.

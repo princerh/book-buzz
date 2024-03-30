@@ -2,6 +2,7 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import Tag from './Tag';
 import {  saveReadBooks, saveWishBooks } from '../Utilities/Utilities';
+import { Helmet } from 'react-helmet';
 
 const BookDetails = () => {
 
@@ -25,6 +26,9 @@ const handleWish = (book)=> {
 }
     return (
         <div className="block max-w-sm mt-7  mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid gap-5 lg:grid-cols-12 dark:bg-gray-50">
+                
+                <Helmet><title>BookDetails.{id}</title></Helmet>
+                
                 <div className='lg:col-span-6 bg-[#1313130D] flex justify-center item-center py-10 dark:bg-gray-500'>
                 <img src={image} alt="" className=" w-68 lg:h-80  "
  />

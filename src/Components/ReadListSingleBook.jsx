@@ -18,7 +18,7 @@ const ReadListSingleBook = ({readBook, handleCross}) => {
 
             <div className="space-y-2 p-2 lg:p-2 flex flex-col justify-between">
                 <div>
-                    <div className="flex justify-between size">
+                    <div className="flex justify-between items-center">
                     <h2 className="text-xl play font-semibold mb-2 tracking-wide">{bookName}</h2> 
                     <TiDeleteOutline className="cursor-pointer" onClick={() => handleCross(bookId)} size={40} />
 
@@ -36,7 +36,7 @@ const ReadListSingleBook = ({readBook, handleCross}) => {
                         </div>
 
                         <div className="flex items-center gap-2 text-[#131313CC] ">
-                            <div className="mt-1">
+                            <div >
                                 <IoLocationOutline />
                             </div>
                             <p>Year of Publishing: {yearOfPublishing}</p>
@@ -45,12 +45,12 @@ const ReadListSingleBook = ({readBook, handleCross}) => {
 
                     <div className="flex flex-col lg:flex-row justify-between lg:items-center text-[#13131399] lg:gap-6">
                         <div className="flex gap-2 items-center ">
-                            <HiOutlineUsers className="mt-1" />
+                            <HiOutlineUsers  />
                             <p>Publisher: {publisher}</p>
                         </div>
 
                         <div className="flex gap-2 items-center">
-                            <MdOutlineContactPage className="mt-1" />
+                            <MdOutlineContactPage  />
                             <p>Page {totalPages}</p>
                         </div>
                     </div>

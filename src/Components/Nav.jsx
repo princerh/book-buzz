@@ -1,6 +1,13 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
 import "./Nav.css"
-const Nav = () => {
+
+  const Nav = ({user, handleGoogleSignIn, handleGoogleSignOut}) => {
+  
+
+
+
     return (
         <div className="pt-1">
             <div className="flex justify-between items-center bg-base-100  px-0 ">
@@ -15,6 +22,9 @@ const Nav = () => {
       <NavLink to="/pages" className={({isActive}) => isActive? "px-4 py-2 transition duration-300 rounded-lg font-bold text-[#23BE0A] border border-[#23BE0A]":"px-4 py-2 font-bold" }>Pages to Read</NavLink>
       <NavLink to="/events" className={({isActive}) => isActive? "px-4 py-2 transition duration-300 rounded-lg font-bold text-[#23BE0A] border border-[#23BE0A]":"px-4 py-2 font-bold"}>Events</NavLink>
       <NavLink to="/about" className={({isActive}) => isActive? "px-4 py-2 transition duration-300 rounded-lg font-bold text-[#23BE0A] border border-[#23BE0A]":"px-4 py-2 font-bold"}>About Us</NavLink> 
+      
+
+
       </ul>
     </div>
     <a className="font-extrabold text-2xl bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient bg-300%">Book Buzz</a>
@@ -26,11 +36,11 @@ const Nav = () => {
       <NavLink to="/pages" className={({isActive}) => isActive? "px-4 py-2 transition duration-300 rounded-lg font-bold text-[#23BE0A] border border-[#23BE0A]":"px-4 py-2 font-bold" }>Pages to Read</NavLink>
       <NavLink to="/events" className={({isActive}) => isActive? "px-4 py-2 transition duration-300 rounded-lg font-bold text-[#23BE0A] border border-[#23BE0A]":"px-4 py-2 font-bold"}>Events</NavLink>
       <NavLink to="/about" className={({isActive}) => isActive? "px-4 py-2 transition duration-300 rounded-lg font-bold text-[#23BE0A] border border-[#23BE0A]":"px-4 py-2 font-bold"}>About Us</NavLink>
-      
+      {user && user.photoURL ? <img className="h-9 ml-5 w-9 rounded-full" src={user.photoURL} alt="" /> : null} 
     </ul>
   </div>
   <div className=" hidden lg:flex gap-3">
-    <Link className="button  bg-[#23BE0A]">Sign In</Link>
+    {user ? <Link onClick={() => handleGoogleSignOut()} className="button  bg-[#23BE0A]">Sign Out</Link> : <Link onClick={() => handleGoogleSignIn()} className="button  bg-[#23BE0A]">Sign In</Link> }
     <Link className="button  bg-[#59C6D2]">Sign Up</Link>
   </div>
 
@@ -40,6 +50,8 @@ const Nav = () => {
     <Link className="button  bg-[#23BE0A]">Sign In</Link>
     <Link className="button  bg-[#59C6D2]">Sign Up</Link>
   </div>
+
+ 
         </div>
     );
 };

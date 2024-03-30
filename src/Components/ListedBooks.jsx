@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import ReadList from "./ReadList";
 import WishList from "./WishList";
 import { deleteRead, deleteWish, getReadBooks, getWishBooks } from "../Utilities/Utilities"; // Assuming you have these utility functions
+import { Helmet } from "react-helmet";
 
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -80,6 +81,9 @@ const ListedBooks = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Book Buzz | Listed Books</title>
+            </Helmet>
             <div className="bg-[#1313130D] rounded-lg mt-4 mb-6 flex justify-center w-full py-2">
                 <h1 className="font-extrabold lg:text-2xl">Books</h1>
             </div>
