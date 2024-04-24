@@ -39,7 +39,7 @@ const handleUpdateForm = (e) => {
     return (
         <div className="container lg:w-2/5 mx-auto px-4 py-8">
             <Helmet>
-           <title>Havenly | Update Profile</title>
+           <title>Book Buzz | Update Profile</title>
            </Helmet>
       <div className="card bg-base-100 shadow-md rounded-lg">
         <div className="flex flex-col items-center gap-5">

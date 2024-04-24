@@ -71,7 +71,7 @@ const router = createBrowserRouter([
       }, 
       {
         path: "/login",
-        element:  <HudaiLogin></HudaiLogin>
+        element:  <PrivateRoute><HudaiLogin></HudaiLogin></PrivateRoute>
       },
       {
         path: "/register",

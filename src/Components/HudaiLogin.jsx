@@ -86,7 +86,7 @@ const Login = () => {
                 
                 <div className="my-8 ">
                 <Helmet>
-                    <title>Havenly | Sign In</title>
+                    <title>Book Buzz | Sign In</title>
                 </Helmet>
                     <div className="card w-fit lg:w-96 max-w-sm shadow-2xl bg-base-100 p-5">
                         <h2 className="font-bold text-2xl text-center drop-shadow-lg">Sign In</h2>

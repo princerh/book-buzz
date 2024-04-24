@@ -64,7 +64,7 @@ console.log(error)
     return (
         <div className=" bg-base-200">
           <Helmet>
-           <title>Havenly | Sign Up</title>
+           <title>Book Buzz | Sign Up</title>
            </Helmet>
         <div className="hero-content flex-col lg:flex-row-reverse">
           
