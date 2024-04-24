@@ -11,6 +11,24 @@
    - Designs the user-friendly navigation bar to be visually appealing, with a modern and clean layout that complements the overall aesthetic of the website.
    - Uses attractive colors, typography, and icons to enhance the navigation bar's appearance and make it visually engaging.
 
+- #### __User Registration:__
+   - Provides a user registration form containing user name, photo, email and password. 
+   - Checks the password verification 
+     - Password must contain at least an Uppercase and a lower case letter.
+     - Password should be at least in 6 characters. 
+
+- #### __User Login:__
+    - Provides a user login system through firebase authentication. 
+    - Enables user to login via Google or Github.     
+
+- #### __Private Content:__
+    - Ensures that a stranger cannot see the private contents of the website without signing up an account. 
+    - Private routes includes Update profile page, Listed book page and Book details page. 
+
+
+ - #### __Update Profile:__
+    - Users can see their profile information and can update those information anytime. 
+
 - #### __Book Listing:__
    - Displays a list of books with their covers, titles, authors, and other relevant information.
    - Each book listing includes options to view more details, add to a reading list, or to a wish list.

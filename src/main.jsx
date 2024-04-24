@@ -17,9 +17,16 @@ import Error from './Components/Error';
 import BookDetails from './Components/BookDetails';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 import BooookDetails from './Components/BooookDetails';
 import { HelmetProvider } from 'react-helmet-async';
 import { AuthProvider } from './Components/AuthProvider';
+import HudaiLogin from './Components/HudaiLogin';
+import HudaiRegister from './Components/HudaiRegister';
+import UpdateProfile from './Components/UpdateProfile';
+import PrivateRoute from './Components/PrivateRoute';
+
+
 
 const router = createBrowserRouter([
   {
@@ -33,11 +40,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/listed",
-        element: <ListedBooks></ListedBooks>
+        element: <PrivateRoute><ListedBooks></ListedBooks></PrivateRoute>
       },
       {
         path: "/pages",
         element: <PagesToRead></PagesToRead>
+      },
+      {
+        path: "/update", 
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
       },
       {
         path: "/events",
@@ -50,13 +61,21 @@ const router = createBrowserRouter([
       },
       {
         path: "/book/:id",
-        element: <BookDetails></BookDetails>,
+        element: <PrivateRoute><BookDetails></BookDetails></PrivateRoute>, 
         loader: () => fetch("../Books.JSON")
         
       },
       {
         path: "/boook/:id",
         element: <BooookDetails></BooookDetails>
+      }, 
+      {
+        path: "/login",
+        element:  <HudaiLogin></HudaiLogin>
+      },
+      {
+        path: "/register",
+        element: <HudaiRegister></HudaiRegister>
       }
     ]
   }

@@ -1,18 +1,37 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { UserContext } from "../Root";
+
+import { AuthContext } from "./AuthProvider";
 
 
 const Banner = () => {
 
-  const {user} = useContext(UserContext) 
-console.log(user)
+  const {user} = useContext(AuthContext) 
+console.log(user) 
+
+const [showWelcomeMessage, setShowWelcomeMessage] = useState(false);
+
+  useEffect(() => {
+    // Show the welcome message when user is logged in
+    if (user) {
+      setShowWelcomeMessage(true);
+      
+      // Hide the welcome message after 10 seconds
+      const hideWelcomeMessageTimeout = setTimeout(() => {
+        setShowWelcomeMessage(false);
+      }, 10000); 
+    return () => {
+        clearTimeout(hideWelcomeMessageTimeout);
+      };
+    }
+  }, [user]);
+
     return (
         <div>
-<div>
+<div className="p-6">
 {
-  user && <h1>Welcome to our community <span className="font-extrabold">{user.displayName}</span></h1> 
-} 
+  showWelcomeMessage && <h1>Welcome to our community <span className="font-bold text-red-500">{user.displayName}</span> ! </h1> 
+}  
 </div>
 
 <div className=" mt-5 bg-base-200 rounded-xl">

@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, getAuth, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider,  signInWithPopup, signOut } from "firebase/auth";
 
 
   
@@ -6,15 +6,16 @@ import { Outlet } from 'react-router-dom';
 import Nav from './Components/Nav';
 import { toast } from "react-toastify";
 import { createContext, useState } from "react";
+import { auth } from "./Components/firebase.config";
 
 
-import app from "./Components/firebase.config";
+
  export const UserContext = createContext(null); 
 
 const Root = () => {
 
     const [user, setUser] = useState({})
-    const auth = getAuth(app); 
+     
 
     const googleProvider = new GoogleAuthProvider()
     const handleGoogleSignIn = () => {
